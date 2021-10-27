@@ -44,6 +44,7 @@ body {
     margin-top: 210px;
     background: #121214;
     position: absolute;
+    place-items: center;
   }
   .avatar {
     width: 10rem;
