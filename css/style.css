@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+}
+html,
+body {
+  --black: hsl(240, 6%, 13%);
+  --grey: hsl(240, 9%, 89%);
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  display: grid;
+  place-items: center;
+
+  background: linear-gradient(161.24deg, #222021 -15.25%, #575655 111.89%);
+}
+
+@media (min-width: 920px) {
+  main {
+    min-width: 358px;
+    min-height: 548px;
+
+    background: url(../imagens/background.svg) no-repeat center;
+    box-shadow: #ff008e;
+  }
+
+  .avatar #faixa {
+    width: 68px;
+    height: 210px;
+    background: linear-gradient(161.24deg, #ff008e -15.25%, #ffcd1e 111.89%);
+
+    display: grid;
+    place-items: center;
+    position: absolute;
+
+    margin-bottom: 460px;
+  }
+  #preta {
+    width: 80px;
+    height: 8px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 210px;
+    background: #121214;
+    position: absolute;
+  }
+  .avatar {
+    width: 10rem;
+    margin: 3.8rem auto 0;
+    display: grid;
+    place-items: center;
+
+    position: relative;
+  }
+  .avatar span {
+    position: absolute;
+    place-items: start;
+    top: -9px;
+    z-index: 1;
+  }
+  .avatar > img {
+    width: 9rem;
+    height: 10.5rem;
+    object-fit: cover;
+
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  }
+}
+@media (min-width: 320px) and (max-width: 700px) {
+  main {
+    width: 100vw;
+    min-height: 812px;
+    min-width: 340px;
+    height: 100vh;
+    background: url(../imagens/background.svg) no-repeat center/cover;
+  }
+  .avatar {
+    width: 10rem;
+    margin: 11.5rem auto 0;
+
+    position: relative;
+  }
+  .avatar span {
+    position: absolute;
+    top: -15px;
+    z-index: 1;
+  }
+  .avatar > img {
+    width: 10rem;
+    height: 11.5rem;
+    object-fit: cover;
+
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  }
+}
+
+.container {
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  color: var(--grey);
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+a {
+  color: var(--grey);
+  text-decoration: none;
+  margin-top: 0.25rem;
+
+  display: flex;
+  gap: 0.75rem;
+
+  justify-content: center;
+  align-items: center;
+}
+p {
+  margin-top: 2rem;
+}
+ul {
+  margin-top: 5rem;
+
+  list-style: none;
+  padding: 0;
+
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
