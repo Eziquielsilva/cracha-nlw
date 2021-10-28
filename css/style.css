@@ -12,43 +12,44 @@ body {
 body {
   display: grid;
   place-items: center;
-
-  background: linear-gradient(161.24deg, #222021 -15.25%, #575655 111.89%);
 }
 
-@media (min-width: 920px) {
+@media (min-width: 701px) {
+  body {
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: url(../imagens/background-nlw.svg) no-repeat center/cover;
+  }
   main {
     min-width: 358px;
     min-height: 548px;
 
-    background: url(../imagens/background.svg) no-repeat center;
-    box-shadow: #ff008e;
+    background: #202024 url(../imagens/mask.svg) no-repeat;
   }
 
   .avatar #faixa {
     width: 68px;
-    height: 210px;
+    height: 240px;
     background: linear-gradient(161.24deg, #ff008e -15.25%, #ffcd1e 111.89%);
 
     display: grid;
     place-items: center;
-    position: absolute;
 
-    margin-bottom: 460px;
+    top: -295px;
+    position: absolute;
   }
   #preta {
     width: 80px;
     height: 8px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 210px;
+    margin-top: 240px;
     background: #121214;
     position: absolute;
-    place-items: center;
   }
   .avatar {
     width: 10rem;
-    margin: 3.8rem auto 0;
+    margin: 5rem auto 0;
     display: grid;
     place-items: center;
 
@@ -56,8 +57,8 @@ body {
   }
   .avatar span {
     position: absolute;
-    place-items: start;
     top: -9px;
+    left: -17px;
     z-index: 1;
   }
   .avatar > img {
